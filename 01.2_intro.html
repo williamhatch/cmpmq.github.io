@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>What Can JavaScript Do?</h2>
+        <h3>1. JavaScript can change HTML content.</h3>
+        <p id="demo">magic</p>
+
+        <!-- getElementById -->
+        <!-- Button -->
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript"'>Don't Click Me!</button>
+
+
+        <!-- Js accepts both double and single quotes -->
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello World!'">Click Me!</button>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'magic'">Go Back</button>
+
+        <ul>
+            <li>use getElementById</li>
+            <li>Js accepts both double and single quotes</li>
+        </ul>
+
+
+        <h3>2. Js can change HTML attribute values.</h3>
+        <p>In this case, Js change the attribute of the image</p>
+
+        <button onclick = "document.getElementById('light').src='imgs/light on.png'">Turn on the light</button>
+
+        <img id = "light" src="imgs/light off.png" alt="Light image here.">
+
+        <button onclick="document.getElementById('light').src='imgs/light off.png'">Turn off the light</button>
+
+
+        <h3>3. Js can change the style of an HTML element.</h3>
+
+        <p id='style'>Font Size</p>
+
+        <button onclick="document.getElementById('style').style.fontSize='38px'">Big Big</button>
+
+
+        <br>
+        <hr>
+        <a href="index.html">Go Back to my Blog</a>
+
+    </body>
+</html>
