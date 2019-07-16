@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+        <!-- control+u to show the codes -->
+        <!-- helpful for dynamic developing//PHP -->
+
+        <!-- developer tool in chrome: f12 -->
+    </head>
+    <body>
+        <!-- Headings -->
+        <h1>Heading One</h1>
+        <h1 title="My Website">About Me</h1>
+        <!-- Tag Attributes, provide information about an element -->
+        <!-- Attributes placed within the start tag -->
+        <!-- TagName(h1) AttributeName(title)="AttributeValue" Content /TagName(h1) -->
+        <a href="blog.html">Go to my blog</a>
+        <h2>Title Two</h2>
+        <h3><em>Try 3</em></h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <em><h6>Heading Six</h6></em>
+
+        <!-- Paragraph -->
+        <p>
+            <!-- b tag : bold, presentation tag -->
+            <!-- strong tag can change in CSS, recommended -->
+            <!-- p tag : paragraph, both presentation and semantic -->
+            Lorem ipsum <em>dolor sit amet consectetur,</em> adipisicing elit. Numquam <strong>unde eligendi</strong> similique <b>aut</b> tempora porro obcaecati facilis, error ipsam rem fugiat qui quo saepe itaque dolor nihil repellendus reprehenderit ipsa.
+            <!-- strong tag : semantic tag; default bold -->
+            <!-- em : emphasize, default italic -->
+        </p>
+        <p>
+            <!-- lorem for testing words; lorem + num for how many words I want -->
+            Lorem ipsum dolor <a href="http://google.com" target="_blank">sit amet consectetur</a> adipisicing elit. Hic, iste.
+            <!-- a tag, link -->
+            <!-- href = location -->
+            <!-- target="_blank" open new link in a new tag -->
+        </p>
+
+        <!-- Lists -->
+        <ul>
+            <!-- unordered lists -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ul>
+
+        <ol>
+            <!-- ordered lists -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ol>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mengqi</td>
+                    <td>mengqi@something.com</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                        <td>QiMeng</td>
+                        <td>QiMeng@something.com</td>
+                        <td>61</td>
+                </tr>
+                <tr>
+                        <td>QiQi</td>
+                        <td>QiQi@something.com</td>
+                        <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+        <!-- br : break -->
+        <!-- hr : horizontal line -->
+
+        <!-- Forms -->
+        <form action="" method="GET">
+            <!-- server side programming -->
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" value="Enter first name">
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" placeholder="Enter last name">
+                <!-- difference between value and placeholder -->
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" value="30">
+            </div>
+            <br>
+            <div>
+                <label>Birthday</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" id="Submit">
+            <!-- will go to process.js -->
+        </form>
+
+        <!-- Button -->
+        <button>Click Me</button>
+        <!-- button click="someFunction" -->
+
+        <br>
+
+        <!-- Images -->
+        <a href="imgs/html.png">
+            <img src="imgs/html.png" alt="My Sample Image" width="200">
+            <!-- src : source -->
+            <!-- alt : alternation, what will show if the img doesn't work -->
+        </a>
+
+        <!-- Quotations -->
+        <blockquote cite="http://google.com">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, libero assumenda rerum earum iusto nesciunt eius? Aperiam, dicta officiis modi error sapiente ullam sit dolores distinctio nam, nulla provident in?
+        </blockquote>
+
+        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome.</p>
+
+        <p><cite>HTML crash course</cite> by Brad Traversy</p>
+    </body>
+</html>

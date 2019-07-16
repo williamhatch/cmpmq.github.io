@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Light on-and-off Game</title>
+        <!-- <link rel="stylesheet" href="game_background_style.css"> -->
+        <style>
+            body{
+                margin:0%
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="box">
+            <a onclick="changecolor('black')" id="black">black</a>
+            <a onclick="changecolor('white')" id="white">white</a>
+            <a onclick="changecolor('grey')" id="grey">grey</a>
+        </div> -->
+
+        <!-- change background color -->
+        <h2 id="gameName">Light On-and-Off Game</h2>
+
+        <a href="index.html">Go Back To My Blog</a>
+        <br><br>
+        <button onclick="changecolor('white')">Turn on the light</button>
+        <button onclick="changecolor('black')">Turn off the light</button>
+
+        <!-- <br>
+        <div>
+            <label>Color</label>
+            <select name="color" id="color" onchange="changecolorselect()">
+                <option value="grey">grey</option>
+                <option value="black">black</option>
+                <option value="white">white</option>
+            </select>
+        </div> -->
+
+        <canvas></canvas>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <script src="game_lightOnnff.js"></script>
+    </body>
+</html>
