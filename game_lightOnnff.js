@@ -13,6 +13,9 @@ function drawFace(color){
     eye.beginPath()
     eye.arc(200, 200, 30, 0, Math.PI * 2, false)
     eye.strokeStyle = color
+  //  debugger
+    // eye.fillStyle = color
+    // eye.fill()
     eye.lineWidth = 8
     eye.stroke()
 
