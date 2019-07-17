@@ -2,12 +2,17 @@
 <html>
     <head>
         <title>Flappy Bird by JavaScript | tyl MQ</title>
+        <style>
+            .play{
+                touch-action: manipulation
+            }
+        </style>
     </head>
-
+    
     <body>
      <h3>FlappyBird</h3>
 
-     <canvas id="canvas" width="288" height="512" ontouchstart="moveUp()"></canvas>
+     <canvas id="canvas" width="288" height="512" ontouchstart="moveUp()" class="play"></canvas>
      
      <script src="game_flappyBird_touchScreen.js"></script>
 
