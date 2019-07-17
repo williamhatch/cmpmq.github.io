@@ -105,8 +105,8 @@ function draw(){
             difficulty = 100
         }
 
-        ctx.drawImage(pipeNorth, pipe[i].x, pipe[i].y,52,242)
-        ctx.drawImage(pipeSouth, pipe[i].x, pipe[i].y + pipeNorth.height + gap,52,378)
+        ctx.drawImage(pipeNorth, pipe[i].x, pipe[i].y)
+        ctx.drawImage(pipeSouth, pipe[i].x, pipe[i].y + pipeNorth.height + gap)
 
         pipe[i].x --;   //move pipe from right to left
         
