@@ -40,8 +40,9 @@ c.lineWidth = 10
 c.stroke()
 
 function changeColor(){
-    document.body.style.background = 'black'
+//    document.body.style.background = 'black'
    // alert('white')
-   c.clearRect(0, 0, innerWidth, innerHeight)
-//   document.body.style.canvas = 'black'
+ //  c.clearRect(0, 0, innerWidth, innerHeight)
+ //?????
+   document.getElementById('myCanvas').style.color = 'blue'
 }
