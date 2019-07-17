@@ -4,15 +4,16 @@
         <title>Flappy Bird by JavaScript | tyl MQ</title>
         <style>
             .play{
-                touch-action: manipulation
+                touch-action: manipulation;
+                width: 100%;
             }
         </style>
     </head>
 
-    <body>
+    <body width="100%">
      <h3>FlappyBird</h3>
 
-     <canvas id="canvas" width="288" height="512" ontouchstart="moveUp()" class="play"></canvas>
+     <canvas id="canvas" ontouchstart="moveUp()" class="play"></canvas>
      
      <script src="game_flappyBird.js"></script>
 

@@ -5,6 +5,9 @@
 var canvas = document.getElementById("canvas")  //canvas id = 'canvas'
 var ctx = canvas.getContext("2d")
 
+var heightRatio = window.innerHeight*1.0/window.innerWidth;
+canvas.height = canvas.width * heightRatio;
+
 //load images
 var bird = new Image()
 var bg = new Image()    //background
@@ -83,7 +86,7 @@ function draw(){
         return
     }
 
-    ctx.drawImage(bg, 0, 0)
+    ctx.drawImage(bg, 0, 0,canvas.width, canvas.height)
     
 
     let gap = 150;      // gap between two pipes - difficulty of the game
@@ -102,8 +105,8 @@ function draw(){
             difficulty = 100
         }
 
-        ctx.drawImage(pipeNorth, pipe[i].x, pipe[i].y)
-        ctx.drawImage(pipeSouth, pipe[i].x, pipe[i].y + pipeNorth.height + gap)
+        ctx.drawImage(pipeNorth, pipe[i].x, pipe[i].y,52,242)
+        ctx.drawImage(pipeSouth, pipe[i].x, pipe[i].y + pipeNorth.height + gap,52,378)
 
         pipe[i].x --;   //move pipe from right to left
         
