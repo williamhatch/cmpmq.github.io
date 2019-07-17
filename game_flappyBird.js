@@ -35,6 +35,9 @@ var scor = new Audio()
 fly.src = 'sounds/fly.mp3'
 scor.src = 'sounds/score.mp3'
 
+let isGameOver = false
+let drawID = null
+
 
 // on key down
 document.addEventListener('keydown', moveUp)
@@ -42,8 +45,15 @@ document.addEventListener('keydown', moveUp)
 function moveUp(){
     by -= 35;
     fly.play();     //audio
+    if (isGameOver) {
+        location.reload();
+    }
 }
 
+function game_over(){
+    //location.reload()
+    
+}
 // pipe coordinates
 // why this should define outside the function
 let pipe = [];      // generate an array
@@ -60,13 +70,30 @@ function randomInt(a, b) {
 
 function draw(){
 
+    if(isGameOver){
+        cancelAnimationFrame(drawID)
+        // ctx.fillStyle = 'black'
+        // ctx.fillRect(35, 0.5 * canvas.height - 35, canvas.width - 70, 35)
+        ctx.fillStyle = 'red'
+        ctx.font = '40px Verdana'
+        ctx.fillText('GameOver', 38, 0.5 * canvas.height)
+        ctx.fillStyle = 'black'
+        ctx.font = '20px Verdana'
+        ctx.fillText('Press Any Key to restart', 20, 0.5 * canvas.height + 40)
+        return
+    }
+
     ctx.drawImage(bg, 0, 0)
+    
 
     let gap = 150;      // gap between two pipes - difficulty of the game
     
     for(let i = 0; i < pipe.length; i++) {
+        if(isGameOver) {
+            break
+        }
+         
 
-        
         let difficulty = 80;       //++
         if(score <= 25 ) {
             gap -= 2
@@ -107,7 +134,11 @@ function draw(){
 
         // detect collision
         if (bx + bird.width >= pipe[i].x && bx <= pipe[i].x + pipeNorth.width && (by <= pipe[i].y + pipeNorth.height || by + bird.height >= pipe[i].y + pipeNorth.height + gap) || by + bird.height >= canvas.height - fg.height || by <= 0) {
-            location.reload()       //reload the page
+    //        location.reload()       //reload the page
+            isGameOver = true
+            cancelAnimationFrame(drawID)
+            console.log("over")
+            game_over()
         }
 
         if(pipe[i].x === 5) {
@@ -129,7 +160,7 @@ function draw(){
     ctx.font = '20px Verdana'
     ctx.fillText('Score : '+score, 20, canvas.height - 30)
 
-    requestAnimationFrame(draw)
+    drawID=requestAnimationFrame(draw)
 }
 
 draw()
