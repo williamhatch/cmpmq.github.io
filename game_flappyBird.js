@@ -5,8 +5,8 @@
 var canvas = document.getElementById("canvas")  //canvas id = 'canvas'
 var ctx = canvas.getContext("2d")
 
-var heightRatio = window.innerHeight*1.0/window.innerWidth;
-canvas.height = canvas.width * heightRatio;
+// var heightRatio = window.innerHeight*1.0/window.innerWidth;
+// canvas.height = canvas.width * heightRatio;
 
 //load images
 var bird = new Image()
