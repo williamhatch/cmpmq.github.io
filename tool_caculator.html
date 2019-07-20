@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+
+  <head>
+    <title>Easy Caculator</title>
+  </head>
+
+  <body>
+    <h2>
+      Easy Caculator
+    </h2>
+    <form name ="form">
+      <input id="input">
+    </form>
+    
+
+    <div>
+      <table>
+        <tr>
+          <td><input type="button" value="C" onclick="clearIn()"></td>
+          <td><input type="button" value="*" onclick="numberIn('*')"></td>
+          <td><input type="button" value="/" onclick="numberIn('/')"></td>
+          <td><input type="button" value="<" onclick="deletetail()"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="7" onclick="numberIn(7)"></td>
+          <td><input type="button" value="8" onclick="numberIn(8)"></td>
+          <td><input type="button" value="9" onclick="numberIn(9)"></td>
+          <td><input type="button" value="-" onclick="numberIn('-')"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="4" onclick="numberIn(4)"></td>
+          <td><input type="button" value="5" onclick="numberIn(5)"></td>
+          <td><input type="button" value="6" onclick="numberIn(6)"></td>
+          <td><input type="button" value="+" onclick="numberIn('+')"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="1" onclick="numberIn(1)"></td>
+          <td><input type="button" value="2" onclick="numberIn(2)"></td>
+          <td><input type="button" value="3" onclick="numberIn(3)"></td>
+          <td><input type="button" value="="></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" value="." onclick="numberIn('.')"></td>
+          <td><input type="button" value="0" onclick="numberIn(0)"></td>
+        </tr>
+
+      </table>
+    </div>
+
+    <script src="tool_caculator.js"></script>
+
+<br>
+    <a href="index.html">Go Back to my Blog</a>
+  </body>
+
+</html>
