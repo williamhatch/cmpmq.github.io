@@ -1,0 +1,118 @@
+/* import font */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* grab font family to body */
+body {
+    /* font-family */
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;  
+    /* vh? viewboard height */
+    width: 100vw;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* 0 is invisible */
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+    opacity: 1;
+    /* current box is visible */
+}
+
+.slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -500px;
+    width: 500px;
+    opacity: 0;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+}
+.slide .content h1{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.slide .content p{
+    font-size: 15px;
+}
+.slide .content p#date{
+    margin-top: 15px;
+    text-align: right;
+}
+
+.slide.current .content {
+    opacity: 1;
+    transform: translateX(500px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+.buttons button#prev {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.buttons button{
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    outline: none;
+}
+.buttons button:hover {
+    background: #fff;
+    color: #333;
+}
+
+@media(max-width: 500px) {
+    .slide .content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.current .content {
+        transform: translateY(-300px); 
+    }
+}
+
+/* background images */
+.slide:first-child {
+    background: url('imgs/NZ_mountCook.jpg') no-repeat center center/cover;
+}
+.slide:nth-child(4) {
+    background: url('imgs/NYC_UN.JPG') no-repeat center top/cover;
+}
+.slide:nth-child(2) {
+    background: url('imgs/NZ_glacier.JPG') no-repeat center top/cover;
+}
+.slide:nth-child(3) {
+    background: url('imgs/NZ_sandngrass.JPG') no-repeat center top/cover;
+}

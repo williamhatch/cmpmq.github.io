@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Footprints</title>
+        <!-- font for the arrows; get it online -->
+        <link rel="stylesheet" href="slider.css">
+    </head>
+    <body>
+        <div class="slider">
+        <!-- as a containter div -->
+            <div class="slide current">
+                <div class="content">
+                    <h1>NZ Mount Cook</h1>
+                    <p>The first time I see the glacier. The fog that day adds more mystery to mount Cook.</p> 
+                    <p id="date">-- July, 2019</p>       
+                </div>
+            </div>
+            <!-- use js to modify -->
+            <!-- use shift and alt ++ down to copy -->
+            <div class="slide">
+                <div class="content">
+                    <h1>NZ Glacier</h1>
+                    <p>Mysterious glacier. I thought snow mountain should be fully covered with snow, but probably that's the case for which on the plateau. Here the galcier in NZ looks like the chocolate-vanilla icecream!</p>        
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>NZ 'desert'</h1>
+                    <p>The grass in NZ is all yellow, which gives it the look as if it is a desert.</p>        
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>NYC United Nations</h1>
+                    <p>The grand General Assembly in the United Nations headquarters in NYC. It really leaves me a deep impression.</p>        
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="slider.js"></script>
+        <div class="buttons">
+            <button id="prev" onclick="prevSlide()"><i class="fas fa-arrow-left">←</i></button>
+            <button id="next" onclick="nextSlide()"><i class="fas fa-arrow-right">→</i></button>
+        </div>
+
+        
+    </body>
+</html>
