@@ -116,3 +116,7 @@ body {
 .slide:nth-child(3) {
     background: url('imgs/NZ_sandngrass.JPG') no-repeat center top/cover;
 }
+
+.footnote {
+    background: #333
+}
