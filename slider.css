@@ -105,7 +105,7 @@ body {
 
 /* background images */
 .slide:first-child {
-    background: url('imgs/NZ_mountCook.jpg') no-repeat center center/cover;
+    background: url('imgs/NZ_mountCook.JPG') no-repeat center center/cover;
 }
 .slide:nth-child(4) {
     background: url('imgs/NYC_UN.JPG') no-repeat center top/cover;
