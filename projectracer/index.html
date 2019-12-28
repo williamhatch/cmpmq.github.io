@@ -16,43 +16,27 @@
 <body>
 	<h2>Tasks</h2>
 	<form>
-		<input type="text" placeholder="Task..." />
-		<input type="submit" value="sumbit"/>
+		<input type="text" placeholder="Task name..." id="taskname" />
+		<br>
+		<input type="number" placeholder="Total Amount..." id="totalamount"/>
+		<input type="number" placeholder="Current..." value="0" id="sumamount" />
+		<!-- ddl input date -->
+		<br>
+		<input type="button" value="sumbit" onclick="submitTask()"/>
 	</form>
-	<ul id="tasks">
-		<li>Task 1
+	<br>
+	
+	<div class="main" id="tasks">
+		<!-- <div class="task-item">
+			<span class="task-name">Task 1</span>
+			<input type="button" value="+" /><input type="button" value="···" />
 			<ul>
-				<li class="task-name">Task Name</li>
 				<li class="task-progress">sum / total; Current Percentage</li>
 				<li class="task-day">xd average; yd current</li>
-				<li><input type="button" value="+" /><input type="button" value="···" /></li>
 			</ul>
-		</li>  
-		<li>Task 2
-			<ul>
-				<li class="task-name">Task Name</li>
-				<li class="task-progress">sum / total; Current Percentage</li>
-				<li class="task-day">xd average; yd current</li>
-				<li><input type="button" value="+" /><input type="button" value="···" /></li>
-			</ul>
-		</li>
-		<li>Task 3
-			<ul>
-				<li class="task-name">Task Name</li>
-				<li class="task-progress">sum / total; Current Percentage</li>
-				<li class="task-day">xd average; yd current</li>
-				<li><input type="button" value="+" /><input type="button" value="···" /></li>
-			</ul>
-		</li>
-		<li>Task 4
-			<ul>
-				<li class="task-name">Task Name</li>
-				<li class="task-progress">sum / total; Current Percentage</li>
-				<li class="task-day">xd average; yd current</li>
-				<li><input type="button" value="+" /><input type="button" value="···" /></li>
-			</ul>
-		</li>
-	</ul>
+		</div>
+		 -->
+	</div>
 </body>
 <script src="js/project_tracer.js"></script>
 </html>
