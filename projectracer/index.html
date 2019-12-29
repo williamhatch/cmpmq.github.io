@@ -13,13 +13,13 @@
    		
     </script>
 </head>
-<body>
+<body id="body">
 	<h2>Tasks</h2>
 	<form>
-		<input type="text" placeholder="Task name..." id="taskname" />
+		新任务名<input type="text" placeholder="Task name..." id="taskname" required="required"/>
 		<br>
-		<input type="number" placeholder="Total Amount..." id="totalamount"/>
-		<input type="number" placeholder="Current..." value="0" id="sumamount" />
+		总任务量<input type="number" placeholder="Total Amount..." id="totalamount" required="required"/>
+		当前进度<input type="number" placeholder="Current..." value="0" id="sumamount" required="required" />
 		<!-- ddl input date -->
 		<br>
 		<input type="button" value="sumbit" onclick="submitTask()"/>
